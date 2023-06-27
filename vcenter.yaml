@@ -1,0 +1,18 @@
+###
+- hosts: compute_ubuntu
+  become: yes
+  pre_tasks:
+    - name: Disable login notify
+      command: "sed -i 's/^curl/#curl/g' /etc/ssh/sshrc"
+      ignore_errors: True
+      tags: ['notify','pre_tasks','always']
+  roles:
+    - {role: sshusers-nosshkey, tags: ['user', 'pre-setup']}
+
+
+  post_tasks:
+    - name: Enable login notify
+      command: "sed -i 's/#*curl/curl/g' /etc/ssh/sshrc"
+      ignore_errors: True
+      tags: ['notify','post_tasks']
+

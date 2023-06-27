@@ -1,0 +1,2 @@
+[vmware]
+vcenter1  ansible_host=172.25.11.249 ansible_user=ansibledeploy
