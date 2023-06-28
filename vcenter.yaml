@@ -3,6 +3,7 @@
   become: yes
 
   roles:
-    - {role: create-snap-vcenter, tags: ['create']}
-    - {role: restore-snap-vcenter, tags: ['restore']}
+    - {role: create-snap-vcenter, tags: ['create', 'pre-task']}
+    - {role: restore-snap-vcenter, tags: ['restore', 'pre-task']}
+    - {role: restore-snap-last-vcenter, tags: ['restore-last', 'pre-task']}
 

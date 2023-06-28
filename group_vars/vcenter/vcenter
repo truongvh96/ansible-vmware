@@ -1,0 +1,6 @@
+datacenter_name: NGSLAB
+vcenter_hostname: "172.24.101.100"
+vcenter_username: truong.vu@ngs.lab
+vm_name: "prometheus-central"
+snapshot_name: test-5
+resource_pool: Sys-intern

@@ -1,2 +1,8 @@
-[vmware]
-vcenter1  ansible_host=172.25.11.249 ansible_user=ansibledeploy
+[vcenter]
+localhost
+
+[vcenter:vars]
+ansible_connection=ssh
+ansible_user= ubuntu
+ansible_ssh_private_key_file= ~/.ssh/truongvh.key
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
