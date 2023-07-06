@@ -3,7 +3,9 @@
   become: yes
 
   roles:
-    - {role: create-snap-vcenter, tags: ['create', 'pre-task']}
-    - {role: restore-snap-vcenter, tags: ['restore', 'pre-task']}
-    - {role: restore-snap-last-vcenter, tags: ['restore-last', 'pre-task']}
+    - {role: create-snap-vcenter, tags: ['create-vm-folder', 'pre-task']}   #tao snap cho vm theo folder
+    - {role: create-snap-vcenter-resouce, tags: ['create-vm-resource', 'pre-task']}   #tao snap cho vm theo resource
+      #- {role: restore-snap-vcenter, tags: ['restore', 'pre-task']}
+    - {role: restore-snap-last-vcenter, tags: ['restore-last', 'pre-task']}  # restore snapshot moi nhat cho folder
+    - {role: restore-snap-last-vcenter-resource, tags: ['restore-resource-last', 'pre-task']}  # restore snapshot moi nhat cho resource
 

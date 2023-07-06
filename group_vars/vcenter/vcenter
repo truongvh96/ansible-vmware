@@ -1,7 +1,8 @@
 datacenter_name: NGSLAB
 vcenter_hostname: "172.24.101.100"
 vcenter_username: truong.vu@ngs.lab
-vm_name: "test1"
-snapshot_name: test-03
-resource_pool_name: Sys-intern
+vm_name: CICD
+snapshot_name: test-00101
+resource_pool: Sys-intern
+cluster_name: "vSAN-ESA"
 folder: /{{ datacenter_name }}/vm/Sys-intern

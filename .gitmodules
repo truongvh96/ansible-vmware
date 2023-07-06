@@ -7,3 +7,9 @@
 [submodule "restore-snap-last-vcenter"]
 	path = restore-snap-last-vcenter
 	url = git@github.com:truongvh96/restore-snap-last-vcenter.git
+[submodule "create-snap-vcenter-resouce"]
+	path = create-snap-vcenter-resouce
+	url = git@github.com:truongvh96/create-snap-vcenter-resouce.git
+[submodule "restore-snap-last-vcenter-resource"]
+	path = restore-snap-last-vcenter-resource
+	url = git@github.com:truongvh96/restore-snap-last-vcenter-resource.git
